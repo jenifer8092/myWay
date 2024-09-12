@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWay</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="nav">
+            <!-- Parte izquierda -->
+            <div class="nav-section">
+                <div class="nav-item">
+                    <img src="./img/home.svg" alt="Home icon">
+                    <a href="#">Home</a>
+                </div>
+                <div class="divider"></div>
+                <div class="nav-item">
+                    <a href="#">Sobre nosotros</a>
+                </div>
+                <div class="divider"></div>
+                <div class="nav-item">
+                    <a href="#">Ayuda</a>
+                </div>
+            </div>
+        
+            <!-- Logo en el centro -->
+            <div class="nav-logo">
+                <img src="../img/Frame39.svg" alt="MyWay Logo">
+            </div>
+        
+            <!-- Parte derecha -->
+            <div class="nav-section right">
+                <div class="search-container">
+                    <label for="search-input">
+                        <img src="img/search-02srch.svg" alt="Search Icon" class="search-icon">
+                    </label>
+                    <input type="text" id="search-input" placeholder="buscar...">
+                </div>
+                <div class="nav-item">
+                    <img src="./img/hearthrt.svg" alt="favorites" id="heard">
+                    <img src="./img/profile.svg" alt="User profile"> 
+                </div>
+            </div>
+        </nav>
+        <div class="line" id="line-nav"></div>
+    </header>
+
+    <div class="lema-container"></div>
+        <div class="lema-with-fields">
+            <div class="lema">
+                <h2>Seguro de tu
+                    camino, seguro de tu 
+                    destino</h2>
+                <img src="./img/map.svg" alt="map" class="map-image">
+            </div>
+
+            <div class="line"></div>
+
+            <div class="search-fields">
+                <div class="field">
+                    <label for="departure">Lugar de partida
+                        <img src="./img/marker.svg" alt="location" id="location">
+                    </label>
+                    <input type="text" id="departure" placeholder="Ingresa tu ubicación">
+                </div>
+                <div class="field">
+                    <label for="destination">Destino
+                        <img src="./img/target.svg" alt="destino" id="destino">
+                    </label>
+                    <input type="text" id="destination" placeholder="Ingresa tu destino">
+                </div>
+                <button type="button">Buscar bus</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="question">
+        <h3>¿Buscando a dónde ir?</h3>
+    </div>
+
+    <div class="cards-container">
+        <div class="chevron">
+            <img src="./img/chevron-double-right.svg" alt="double-left-side" id="double-left-side">
+        </div>
+        
+        <div class="card">
+            <img src="./img/taganga.jpg" alt="Taganga" id="taganga">
+            <div class="name-tag">
+                <img src="./img/tagangaIcon.svg" alt="taganga" id="idtag">
+                <p>Taganga</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/parque de los novios.jpg" alt="Parque de los novios" id="parque">
+            <div class="name-tag">
+                <img src="./img/parkIcon.svg" alt="parque de los novios" id="idpark">
+                <p>Parque de los novios</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/buenaVista.jpg" alt="BuenaVista" id="buenaVista">
+            <div class="name-tag">
+                <img src="./img/buenaVistaIcon.svg" alt="buenaVista" id="idmall">
+                <p>BuenaVista</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/museo del oro.jpg" alt="Museo del oro" id="museo">
+            <div class="name-tag">
+                <img src="./img/museoIcon.svg" alt="museo del oro" id="idmuseum">
+                <p>Museo del oro</p>
+            </div>
+        </div>
+        <div class="chevron">
+            <img src="./img/chevron-double-left.svg" alt="double-right-side" id="double-right-side">
+        </div>
+    </div>
+
+    <div class="info-container">
+        <div class="info-1">
+            <h2>Planifica tus viajes en bus con facilidad y precisión</h2>
+            <p>Nuestra plataforma te permite encontrar los buses que mejor se ajustan a tu ubicación y destino, 
+                mostrando rutas detalladas, tiempos estimados de llegada y la disponibilidad de asientos. Además, 
+                descubre lugares turísticos destacados y guarda tus favoritos para futuros viajes.</p>
+        </div>
+        <div class="info-2">
+            <h3>Rastreo en tiempo real</h3>
+            <p>Obtén información en tiempo real sobre los buses que pasan cerca de tu ubicación y su tiempo 
+                estimado de llegada. Planifica tu viaje con precisión, conociendo exactamente cuánto tardará 
+                el bus en llegar a ti.</p>
+            <img src="./img/clock-check.svg" alt="tiempo real">
+        </div>
+        <div class="info-3">
+            <h3>Recomendaciones turísticas personalizadas</h3>
+            <p>Explora las mejores atracciones turísticas y destinos recomendados cerca de tu ruta. 
+                Guarda tus favoritos para futuras visitas y haz que cada viaje sea una nueva aventura.</p>
+        </div>
+        <img src="./img/marker-info.svg" alt="mark">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección de enlaces de navegación -->
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Sección de redes sociales -->
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="./img/facebook icon.jpg" alt="Facebook"></a>
+                    <a href="#"><img src="./img/twitter icon.jpg" alt="Twitter"></a>
+                    <a href="#"><img src="./img/linked in icon.jpg" alt="LinkedIn"></a>
+                </div>
+            </div>
+    
+            <!-- Sección de contacto -->
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Teléfono: +57 123 456 7890</p>
+                <p>Email: empresa@outlook.com</p>
+            </div>
+        </div>
+    
+        <!-- Derechos de autor -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Todos los derechos reservados.</p>
+        </div>
+    </footer>    
+</body>
+</html>
+
+<!--Poner las flechitas al lado de las cards-->
