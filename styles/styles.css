@@ -243,7 +243,7 @@ button {
 #double-right-side, #double-left-side {
     padding-top: 90px;
 }
-/*independizar las sombras - Acomodar como la pá*/
+/*Sección sugerencias*/
 .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -253,60 +253,65 @@ button {
 }
 
 .card {
-    border-radius: 10px;  
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width: 200px;
-    height: auto;
-    overflow: hidden;  
+    width: 228px;
+    height: 230px;
+
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+
+    position: relative;
+
+    box-shadow: 0px 2px 5px 2px #31313198;
+    z-index: -1;
 }
 
 .card img {
+
     width: 100%;
-    height: 160px; 
-    border-radius: 10px; 
-    object-fit: cover; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;  
 }
-/*
-.name-tag {
-    flex: 1; 
-    background-color: #FAFAFA;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-    justify-content: center; 
 
-}
-*/
 
 .name-tag {
-    flex: 1; 
-    background-color: rgb(185, 29, 29);
-    border-radius: 30px;
+    bottom: 0px;
+    background-color: #fafafa;
+    width: 100%;
+    height: 67px;
+    border-radius: 20px;
+
+
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+
     gap: 10px;
-    justify-content: center; 
-    transform: translateY(-30px);
+
+
+    position: absolute;
+
+    transform: translateY(1px);
+
 
 }
 
-.name-tag img {
-    width: 60px;  /* Tamaño del ícono */
-    height: 60px;
-    padding-bottom: 10px;
+.name-tag > img {
+    width: 40px;   /*Tamaño del ícono*/ 
+    height: 40px;
+    /*padding-bottom: 10px;*/
+
+    padding: 5px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
 }
 
 .name-tag p {
-    font-size: small;
+    font-size: 15px;
 }
 
 
@@ -314,98 +319,65 @@ button {
     transform: translateY(-5px, 2 seg );
 }
 
-.info-container {
-    width: 100%;
-    height: 500px;
+/*Seccion de informacion*/
+.info-container{
+    height: auto;
+    padding: 80px 80px;
     background-color: #D9D9D9;
 
+    display: flex;
+    flex-direction: row wrap;
+    gap: 30px;
+
+}
+.info-1{
+    width: 500px;
+    height: 300px;
+    text-align: left;
 }
 
-.info-1 h2 {
-    padding-left: 80px;
-    padding-top: 80px;
-    width: 320px;
-    height: 70px;
-    overflow: hidden;  
-    display: flex;
-    flex-direction: row;
+#side-title{ 
+    font-size: 30px;
     font-family: 'Jacques Francois', serif;
     font-weight: lighter;
 }
 
-.info-container{
-    display: flex;
-    flex-flow: row nowrap;
-    
-    
+.info-1 p{
+    font-size: 24px;
 }
 
-.info-1 p {
-  padding-left: 80px;
-    padding-top: 0px;
-    width: 320px;
-    height: 240px;  
-    font-size: 14px;  
-}
-
-.info-2 {
-    padding-top: 20px;
-}
-
-.info-2 h3 {
-    padding-left: 80px;
-    padding-top: 80px;
-    width: 320px;
-    height: 30px;
-    overflow: hidden;  
-    display: flex;
-    flex-direction: row;
-    font-family: 'Jacques Francois', serif;
-    font-weight: lighter;
-    
-}
-
-.info-2 p {
-    padding-left: 80px;
-    padding-top: 0px;
-    width: 320px;
-    height: 240px;  
-    font-size: 14px;
-}
-
-.info-3 {
-    border: 1px;
-    border-color: #000;
-}
-
-.info-3 h3 {
-    padding-left: 80px;
-    padding-top: 80px;
-    width: 320px;
-    height: 70px;
-    overflow: hidden;  
-    display: flex;
-    flex-direction: row;
-    font-family: 'Jacques Francois', serif;
-    font-weight: lighter;
-}
-
-.info-3 p {
-    padding-left: 80px;
-    padding-top: 0px;
-    width: 320px;
-    height: 240px;  
-    font-size: 14px;
-}
-
-.info-2 > h3 , .info-2 > p, .info-3 > h3 , .info-3 > p {
+.box-2{
+    width: 360px;
+    height: auto;
     text-align: center;
-    align-items: center;
+    align-self: center;
+    padding: 15px 10px;
+
+    border: 1px solid #000000;
+    position: relative;
+
 }
 
-.info-container img {
-    height: 30px;
-    width: 30px;
+.box-2 > img{
+    position: absolute;
+    bottom: 0px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+
+    justify-content: center;
+
+    transform: translate(30px, 30px);
+
+}
+
+#info-title{
+    font-size: 22px;
+    font-family: 'Jacques Francois', serif;
+    font-weight: lighter;
+}
+.info-1 > p, .box-2 >p{
+    font-size: 20px;
+    
 }
 
 .footer {
