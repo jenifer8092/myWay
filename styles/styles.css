@@ -81,7 +81,7 @@ header {
     width: 93%;
     border-bottom: 1px solid #000; 
     padding-bottom: 20px;
-    display:#000'
+    display:#000;
     margin-left: 30px;
     margin-right: auto;
 }
@@ -243,6 +243,7 @@ button {
 #double-right-side, #double-left-side {
     padding-top: 90px;
 }
+
 /*Sección sugerencias*/
 .cards-container {
     display: flex;
@@ -329,6 +330,9 @@ button {
     flex-direction: row wrap;
     gap: 30px;
 
+
+    
+
 }
 .info-1{
     width: 500px;
@@ -348,25 +352,23 @@ button {
 
 .box-2{
     width: 360px;
-    height: auto;
+    height: 265px;
     text-align: center;
     align-self: center;
-    padding: 15px 10px;
+    padding: 15px 10px 0px;
 
     border: 1px solid #000000;
-    position: relative;
 
 }
 
 .box-2 > img{
-    position: absolute;
     bottom: 0px;
     background-color: #D9D9D9;
     border-radius: 50%;
 
     justify-content: center;
 
-    transform: translate(30px, 30px);
+    transform: translate(50px, -15px);
 
 }
 
@@ -380,6 +382,7 @@ button {
     
 }
 
+/*Sección footer*/
 .footer {
     background-color: #333;
     color: #fff;
